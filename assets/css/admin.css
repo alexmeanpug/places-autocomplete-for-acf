@@ -1,0 +1,58 @@
+/* Places Autocomplete for ACF */
+
+.acf-google-map .title {
+	position: relative;
+	overflow: visible;
+}
+
+.ciricdev-paacf-list {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: 10000;
+	max-height: 280px;
+	overflow-y: auto;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-top: 0;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.ciricdev-paacf-item {
+	padding: 8px 12px;
+	border-top: 1px solid #f0f0f1;
+	font-size: 13px;
+	line-height: 1.4;
+	cursor: pointer;
+}
+
+.ciricdev-paacf-item span {
+	color: #646970;
+}
+
+.ciricdev-paacf-notice {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: 10000;
+	padding: 10px 12px;
+	background: #fcf0f1;
+	border: 1px solid #d63638;
+	border-left-width: 4px;
+	color: #1d2327;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.ciricdev-paacf-notice a {
+	white-space: nowrap;
+}
+
+.ciricdev-paacf-item.is-active,
+.ciricdev-paacf-item:hover {
+	background: #f0f6fc;
+}
