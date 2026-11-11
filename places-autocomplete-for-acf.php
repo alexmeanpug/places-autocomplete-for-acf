@@ -117,6 +117,10 @@ function ciricdev_paacf_enqueue_assets() {
 		)
 	);
 
+	// Setup details and Google Cloud Console links are only shown to administrators in wp-admin,
+	// never to visitors of front-end forms (acf_form()).
+	$settings['showDetails'] = is_admin() && current_user_can( 'manage_options' );
+
 	$settings['i18n'] = array(
 		'listLabel'     => __( 'Address suggestions', 'places-autocomplete-for-acf' ),
 		'linkText'      => __( 'Open Google Cloud Console', 'places-autocomplete-for-acf' ),

@@ -28,6 +28,11 @@
 	function describeError(err) {
 		var msg = String((err && (err.message || err)) || '');
 
+		// Front-end forms and non-admin users only get a generic message, without links.
+		if (!settings.showDetails) {
+			return { message: i18n.errGeneric, url: '' };
+		}
+
 		if (/has not been used in project|is disabled|SERVICE_DISABLED|not activated/i.test(msg)) {
 			return { message: i18n.errNotEnabled, url: CONSOLE_URL };
 		}
