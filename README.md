@@ -2,6 +2,8 @@
 
 Fixes `LegacyApiNotActivatedMapError` in the [Advanced Custom Fields](https://www.advancedcustomfields.com/) Google Map field by switching its address search to Google **Places API (New)**.
 
+**Available on WordPress.org:** [wordpress.org/plugins/places-autocomplete-for-acf](https://wordpress.org/plugins/places-autocomplete-for-acf/)
+
 ![Places Autocomplete for ACF](.wordpress-org/banner-1544x500.png)
 
 ## The problem
@@ -28,6 +30,16 @@ ACF has not shipped a fix yet ([AdvancedCustomFields/acf#948](https://github.com
 - Shows a clear message under the field when Google rejects a request (API not enabled, key restricted, domain not allowed, billing off), with a link to Google Cloud Console.
 
 No settings page. Activate it and the field works.
+
+## Screenshots
+
+Address suggestions from Places API (New) in the ACF Google Map field:
+
+![Address suggestions from Places API (New) in the ACF Google Map field](.wordpress-org/screenshot-1.png)
+
+Without this plugin, an API key from a new Google Cloud project shows "This page can't load Google Maps correctly" when you search for an address:
+
+![ACF Google Map field showing "This page can't load Google Maps correctly" without the plugin](.wordpress-org/screenshot-2.png)
 
 ## Requirements
 

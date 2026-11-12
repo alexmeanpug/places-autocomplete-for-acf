@@ -109,6 +109,11 @@ Yes. Use the `ciricdev_paacf_request` ACF JS filter to adjust the Places API (Ne
 
 Yes. It works with both the free and PRO versions of ACF.
 
+== Screenshots ==
+
+1. Address suggestions from Places API (New) in the ACF Google Map field.
+2. Without this plugin: with an API key from a new Google Cloud project, the ACF Google Map field shows "This page can't load Google Maps correctly" when you search for an address.
+
 == Contributing ==
 
 Development happens on GitHub: https://github.com/alexmeanpug/places-autocomplete-for-acf
